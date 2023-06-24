@@ -1,18 +1,19 @@
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
+import SignUpForm from "../components/SignUpForm";
 
 const style = {
   appContainer: "",
   pic: "mx-auto object-contain h-48 w-full",
 };
 
-const Home = () => {
+const SignUp = () => {
   return (
     <div className={style.appContainer}>
       <NavigationBar />
-      <h1>Hello world</h1>
+      <SignUpForm />
     </div>
   );
 };
 
-export default Home;
+export default SignUp;
