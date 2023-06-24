@@ -19,7 +19,7 @@ const LandlordSwipe = () => {
         <button className={style.button1}>KYC</button>
         <img
           className={style.image}
-          src="https://placeimg.com/640/480/people"
+          src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Profile"
         />
         <div className="flex space-x-4 mt-4">
