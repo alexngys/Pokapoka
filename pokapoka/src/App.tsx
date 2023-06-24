@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 
 import SignUp from "./pages/SignUp";
 import Signin from "./pages/SignIn";
-import LandlordProfile from "./pages/LandlordProfile";
+import LandlordSwipe from "./pages/LandlordSwipe";
 import TenantSwipe from "./pages/TenantSwipe";
 import Matches from "./pages/Matches";
 
@@ -16,7 +16,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="SignUp/:type" element={<SignUp />} />
         <Route path="SignIn" element={<Signin />} />
-        <Route path="LandlordProfile" element={<LandlordProfile />} />
+        <Route path="LandlordSwipe" element={<LandlordSwipe />} />
         <Route path="TenantSwipe" element={<TenantSwipe />} />
         <Route path="Matches" element={<Matches />} />
       </Route>

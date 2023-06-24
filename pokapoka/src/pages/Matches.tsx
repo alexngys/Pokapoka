@@ -25,7 +25,6 @@ const Matches = () => {
       image: "jane-smith.jpg",
       bio: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     },
-    // Add more matches as needed
   ];
   return (
     <div className={style.maindiv}>
