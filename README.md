@@ -1,0 +1,2 @@
+# Pokapoka
+Polkadot hackaton
