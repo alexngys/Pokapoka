@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 
 import SignUp from "./pages/SignUp";
 import Signin from "./pages/SignIn";
+import LandlordProfile from "./pages/LandlordProfile";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="SignUp/:type" element={<SignUp />} />
         <Route path="SignIn" element={<Signin />} />
+        <Route path="LandlordProfile" element={<LandlordProfile />} />
       </Route>
     </Routes>
   );
