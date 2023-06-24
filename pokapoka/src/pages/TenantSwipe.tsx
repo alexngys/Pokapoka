@@ -2,22 +2,45 @@ import React from "react";
 import NavigationBar from "../components/NavigationBar";
 
 const style = {
-  maindiv: "flex items-center justify-center min-h-screen bg-gray-100",
-  card: "max-w-md p-8 bg-white rounded shadow",
-  h2: "text-2xl font-bold mb-4",
-  label: "block text-gray-700 font-semibold mb-2",
-  input:
-    "w-full border border-gray-300 rounded py-2 px-3 focus:outline-none focus:border-blue-500",
-  button:
-    "w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+  maindiv: "flex flex-col items-center h-screen", 
+  card: "w-64 p-4 border border-gray-300 rounded shadow-md bg-white mt-10",
+  image: "mt-8 w-64 h-64 rounded-full",
+  button1: "px-4 py-2 bg-green-500 text-white rounded cursor-pointer mr-2",
+  button2: "px-4 py-2 bg-red-500 text-white rounded cursor-pointer"
 };
 
 const TenantSwipe = () => {
   return (
-    <div>
+    <>
       <NavigationBar />
-    </div>
+      <div className={style.maindiv}>
+        <div className={style.card}>
+          <img className="w-full rounded" src="https://placeimg.com/640/480/people" alt="Profile" />
+          <div className="mt-4">
+            <h3 className="text-lg font-semibold">Rent Cost:</h3>
+            <p>$1,000</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="text-lg font-semibold">Name:</h3>
+            <p>John Doe</p>
+          </div>
+          <div className="mt-4">
+            <h3 className="text-lg font-semibold">Description:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div className="flex mt-4">
+          <button className={style.button1}>
+            Yes
+          </button>
+          <button className={style.button2}>
+            No
+          </button>
+        </div>
+      </div>
+    </>
   );
 };
+
 
 export default TenantSwipe;
