@@ -3,7 +3,7 @@ import NavigationBar from "../components/NavigationBar";
 import MatchCard from "../components/MatchCard";
 
 const style = {
-  maindiv: "flex items-center justify-center min-h-screen bg-gray-100",
+  maindiv: "bg-gray-100 h-screen",
   card: "max-w-md p-8 bg-white rounded shadow",
   h2: "text-2xl font-bold mb-4",
   label: "block text-gray-700 font-semibold mb-2",
@@ -28,12 +28,14 @@ const Matches = () => {
     // Add more matches as needed
   ];
   return (
-    <div>
+    <div className={style.maindiv}>
       <NavigationBar />
-      <div className="flex justify-center">
-        {matches.map((match, index) => (
-          <MatchCard key={index} match={match} />
-        ))}
+      <div className="flex justify-center items-center">
+        <div className="flex flex-col items-center">
+          {matches.map((match, index) => (
+            <MatchCard key={index} match={match} />
+          ))}
+        </div>
       </div>
     </div>
   );
